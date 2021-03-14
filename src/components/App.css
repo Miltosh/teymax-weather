@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#141e30),
+        color-stop(#2d445f),
+        to(#141e30)
+    );
+    background-image: linear-gradient(90deg, #141e30, #2d445f, #141e30);
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: Open Sans, sans-serif;
+    box-shadow: inset 15px 15px 200px #000;
+}
+
+#root {
+    padding: 0 20px;
+}
+
+h1 {
+    margin-bottom: 1.375rem;
+    color: #fff;
+    font-weight: 100;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 3rem;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+nav {
+    text-align: center;
+    color: #c9c9c9;
+    padding: 15px;
+}
+
+nav input {
+    padding: 8px 10px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    background: transparent;
+    color: #fff;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    margin-left: 3rem;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid silver;
+}
+
+nav button {
+    padding: 8px 14px;
+    margin: 0 3rem 0 0.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: silver;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid silver;
+}
+
+.lastCities {
+    margin: 1% 0;
+    text-align: center;
+    display: inline-flex;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 1% 0;
+}
+
+li {
+    margin: 0 15px;
+}
+
+li:first-child {
+    margin-left: 0;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.container {
+    width: 70%;
+    max-width: 1000px;
+    margin: 4rem auto auto;
+    background: #131b2e;
+    box-shadow: 5px 5px 90px #000;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    border-radius: 3rem;
+    position: relative;
+}
+
+.weather {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 109%;
+    width: 100%;
+    border-radius: 3rem;
+    -webkit-transform: translateY(-4.5%);
+    transform: translateY(-4.5%);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    background: -webkit-gradient(linear, left top, right bottom, from(#0f1725), to(#2e4968));
+    background: linear-gradient(to bottom right, #0f1725, #2e4968);
+
+    z-index: 102;
+    padding: 10px 25px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.forecast {
+    border-radius: 3rem;
+}
+
+.forecast-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.extra-current-data {
+    padding: 15px 20px;
+    margin: auto;
+    width: 100%;
+    position: relative;
+}
+
+.extra-current-data div {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    width: 90%;
+    border: 1px solid #222f57;
+    padding: 7px 18px;
+    margin-bottom: 0.5rem;
+}
+
+.extra-current-data i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.wind {
+    color: #2063f3;
+}
+.humidity {
+    color: #00a0fd;
+}
+.press {
+    font-size: 1.3rem !important;
+    color: orange;
+}
+.sun-i {
+    color: #ff0;
+}
+.sunset {
+    color: #000;
+}
+
+.extra-current-data span {
+    text-align: center;
+    background: #067915;
+    color: #fff;
+    margin-left: 15px;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.forecast {
+    display: flex;
+}
+
+.forecast-data {
+    position: relative;
+    margin-top: 0.8rem;
+    display: flex;
+    padding: 5px;
+}
+
+.forecast-data__container {
+    margin: auto;
+}
+
+.card {
+    width: 120px;
+    border-radius: 10px;
+    height: 180px;
+    background: #090d16;
+    padding: 10px;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.error {
+    text-align: center;
+}
